@@ -1,0 +1,183 @@
+@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px $font;
+  background: $white;
+  color: $grey-100;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: $regular;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+a {
+  cursor: pointer;
+  color: $blue-100;
+
+  &:hover {
+    color: $blue-150;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  text-align: left;
+  padding: 10px 60px 10px 10px;
+  border-bottom: 1px solid $grey-10;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+th {
+  font-weight: $regular;
+  color: $grey-40;
+}
+
+th.sorted-by {
+  color: $grey-60;
+  border-bottom: 1px solid $orange-100;
+}
+
+/*
+ * Bootstrap overrides.
+ */
+$body-bg: #211922;
+$text-color: #58666f;
+$font-family-base: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$link-color: #363f34;
+$link-hover-color: #141718;
+
+$navbar-default-bg: #fff;
+$navbar-default-link-color: #353f44;
+$navbar-default-link-hover-bg: #f6f7f7;
+$navbar-default-link-active-bg: #f6f7f7;
+
+$btn-default-color: #58666e;
+$btn-default-border: #dee5e7;
+
+$btn-info-color: #fff;
+$btn-info-bg: #23b7f5;
+$btn-info-border: #23b7f5;
+
+$screen-sm: 800px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 220px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn {
+  font-weight: 500;
+  border-radius: 2px;
+  outline: 0 !important;
+}
+
+.btn-remove {
+  position:absolute;
+  top: 0;
+  right:0;
+  border-radius: 100%;
+}
+
+.navbar-default .navbar-brand {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.thumbnail {
+  background-color: #fff;
+  padding: 0;
+  border-color: #dee5e7;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.thumbnail img {
+  width: 100%;
+  padding: 6px;
+  border-radius: 15px 15px 15px 15px;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $btn-info-bg;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}

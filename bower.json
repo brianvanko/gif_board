@@ -1,0 +1,8 @@
+{
+  "name": "meanr",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "toastr": "^2.1.1",
+    "bootstrap-sass-official": "~3.3.5"
+  }
+}
