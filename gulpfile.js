@@ -107,7 +107,6 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-  //gulp.watch('styles/**/*.less', ['styles']);
   gulp.watch('app/stylesheets/main.scss', ['styles']);
 });
 

@@ -4,7 +4,7 @@
   "description": "A gif board app to get started with the MEANR (aka RAMEN) stack",
   "main": "api.js",
   "scripts": {
-    "start": "babel-node api.js",
+    "start": "babel-node server.js",
     "watch": "nodemon --exec babel-node -- api.js"
   },
   "dependencies": {
