@@ -33,7 +33,7 @@ class Item extends React.Component {
   render() {
     return (
       <div className='container'>
-        <div className='thumbnail fadeInUp animated'>
+        <div className='thumbnail_full fadeInUp animated'>
         	<a href={this.state.link} target='_blank'>
             <img src={this.state.thumb} />
           </a>

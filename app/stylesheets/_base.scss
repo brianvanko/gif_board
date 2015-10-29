@@ -3,7 +3,7 @@
 body {
   padding: 0;
   margin: 0;
-  font: 14px $font;
+  font: 10px $font;
   background: $white;
   color: $grey-100;
 }
@@ -27,40 +27,6 @@ a {
   }
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  text-align: left;
-  padding: 10px 60px 10px 10px;
-  border-bottom: 1px solid $grey-10;
-
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    padding-right: 0;
-  }
-}
-
-th {
-  font-weight: $regular;
-  color: $grey-40;
-}
-
-th.sorted-by {
-  color: $grey-60;
-  border-bottom: 1px solid $orange-100;
-}
-
-/*
- * Bootstrap overrides.
- */
-
 $screen-sm: 800px;
 
 html {
@@ -74,16 +40,20 @@ body {
 }
 
 .btn {
-  font-weight: 500;
-  border-radius: 2px;
+  font-weight: 50;
+  border-radius: 1px;
   outline: 0 !important;
 }
 
 .btn-remove {
   position:absolute;
-  top: 0;
-  right:0;
+  top: 6px;
+  right:6px;
   border-radius: 100%;
+  padding:3px;
+  width: 12px;
+  height: 12px;
+  font-size: 5px;
 }
 
 .navbar-default .navbar-brand {
@@ -92,12 +62,48 @@ body {
   font-weight: 700;
 }
 
+.thumbnail_full {
+  background-color: #fff;
+  padding: 0;
+  border-color: #dee5e7;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.caption {
+  margin: 5px;
+}
+
+.thumbnail_full img {
+  width: 100%;
+  padding: 6px;
+  border-radius: 15px 15px 15px 15px;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  overflow:hidden;
+
+  &:hover {
+    background-color: $btn-info-bg;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
 .thumbnail {
   background-color: #fff;
   padding: 0;
   border-color: #dee5e7;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
   border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  width: 150px;
+  height: 200px;
 }
 
 .thumbnail img {
@@ -108,6 +114,7 @@ body {
   background-color: #fff;
   cursor: pointer;
   transition: background-color 0.2s;
+  overflow: hidden;
 
   &:hover {
     background-color: $btn-info-bg;

@@ -1,6 +1,5 @@
 # gifboard
 
-
 npm install
 bower install
 

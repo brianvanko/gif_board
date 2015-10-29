@@ -8,7 +8,7 @@ var app = express();
 var path = require('path');
 var itemRoutes;
 
-var React = require('react');
+var react = require('react');
 var Router = require('react-router');
 var routes = require('./app/routes');
 var alt = require('./app/alt');
@@ -31,7 +31,7 @@ itemRoutes = require('./item/routes/item.routes')(app, express);
 app.use(function(req, res) {
   var iso = new Iso();
   Router.run(routes, req.path, function(Handler) {
-    var html = React.renderToString(React.createElement(Handler));
+    var html = react.renderToString(react.createElement(Handler));
     iso.add(html, alt.flush());
     res.render('index.ejs', { html: iso.render() });
   });
