@@ -18,7 +18,7 @@
     "express": "^4.13.1",
     "fs": "0.0.2",
     "iso": "^4.2.0",
-    "mongoose": "^4.0.7",
+    "mongoose": "^5.8.7",
     "morgan": "^1.6.1",
     "querystring": "^0.2.0",
     "react": "^0.13.3",
