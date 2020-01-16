@@ -8,3 +8,7 @@ mongod
 
 npm run watch
 gulp
+
+# todo
+
+Add image upload
