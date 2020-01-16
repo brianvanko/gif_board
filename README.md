@@ -12,3 +12,4 @@ gulp
 # todo
 
 Add image upload
+Add testing
