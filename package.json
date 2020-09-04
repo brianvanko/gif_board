@@ -21,7 +21,7 @@
     "mongoose": "^4.0.7",
     "morgan": "^1.6.1",
     "querystring": "^0.2.0",
-    "react": "^0.13.3",
+    "react": "^15.6.2",
     "react-router": "^0.13.3",
     "request": "^2.53.0",
     "underscore": "^1.7.0"
